@@ -27,7 +27,7 @@ public class Main extends Application {
     sprite.setFitWidth(500);
     Group root = new Group(sprite);
     Pane pane = new Pane(root);
-    Scene theScene = new Scene(pane, 600, 400,true);
+    Scene theScene = new GameScene(pane, 600, 400,A);
     primaryStage.setScene(theScene);
 
 
