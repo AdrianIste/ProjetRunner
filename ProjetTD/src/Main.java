@@ -15,20 +15,20 @@ public class Main extends Application {
          @Override
  public void start(Stage primaryStage) throws Exception{
     primaryStage.setTitle("Hello world");
-    Camera A=new Camera(1,1);
+    Camera A=new Camera(800,0);
 
 
 
-    Image spriteSheet = new Image(new FileInputStream("C:\\Users\\istea\\Pictures\\lapin.png")); //ne fonctionne pas sans le fileInput
-    ImageView sprite = new ImageView(spriteSheet); //pour voir l'image
-    sprite.setViewport(new Rectangle2D(0,0,455,500));
-    sprite.setX(0); //coordonnees
-    sprite.setY(0);
-    sprite.setFitHeight(455); //pour changer la taille de l image
-    sprite.setFitWidth(500);
-    Group root = new Group(sprite);
-    Pane pane = new Pane(root);
-    Scene theScene = new GameScene(pane, 1000, 100,A);//taille de la fenêtre+affichage
+    //Image spriteSheet = new Image(new FileInputStream("C:\\Users\\istea\\Downloads\\heros (1).png")); //ne fonctionne pas sans le fileInput
+    //ImageView sprite = new ImageView(spriteSheet); //pour voir l'image
+    //sprite.setViewport(new Rectangle2D(0,0,455,500));
+    //sprite.setX(0); //coordonnees
+    //sprite.setY(0);
+    //sprite.setFitHeight(455); //pour changer la taille de l image
+    //sprite.setFitWidth(500);
+    //Group root = new Group(sprite);
+    Pane pane = new Pane();
+    Scene theScene = new GameScene(pane, 1000, 1000,A);//taille de la fenêtre+affichage
     primaryStage.setScene(theScene);
 
 

@@ -5,8 +5,8 @@ import java.io.FileInputStream;
 
 public class StaticThing {
     private ImageView imageView;
-    private double sizeX;
-    private double sizeY;
+    public double sizeX; //je mets en public pour y accéder, j'aurais aussi pu passer par un getter
+    private double sizeY; //j'essaye de passer par un getter pour accéder à y dans une autre class
     public StaticThing(double sizeX, double sizeY, String fileName) throws Exception {
         this.sizeX = sizeX;
         this.sizeY = sizeY;
@@ -14,7 +14,16 @@ public class StaticThing {
         this.imageView = new ImageView(image);
     }
 
-    public ImageView getImageSet() {
+    public double getSizeY() {
+        return sizeY;
+    }
+
+    public void setSizeY(double sizeY) {
+        this.sizeY = sizeY;
+    }
+
+    public ImageView getImageView() {
+
         return imageView;
     }
 }
