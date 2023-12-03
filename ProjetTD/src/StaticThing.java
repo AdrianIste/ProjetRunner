@@ -10,8 +10,10 @@ public class StaticThing {
     public StaticThing(double sizeX, double sizeY, String fileName) throws Exception {
         this.sizeX = sizeX;
         this.sizeY = sizeY;
-        Image image = new Image(new FileInputStream(fileName));
-        this.imageView = new ImageView(image);
+        Image image = new Image(new FileInputStream(fileName)); //on va chercher le nom de l'image
+        this.imageView = new ImageView(image); //création de l'image view
+        this.imageView.setFitHeight(sizeY);
+        this.imageView.setFitWidth(sizeX);
     }
 
     public double getSizeY() {

@@ -15,7 +15,7 @@ public class Main extends Application {
          @Override
  public void start(Stage primaryStage) throws Exception{
     primaryStage.setTitle("Hello world");
-    Camera A=new Camera(800,0);
+    Camera A=new Camera(0,0);
 
 
 
@@ -28,7 +28,7 @@ public class Main extends Application {
     //sprite.setFitWidth(500);
     //Group root = new Group(sprite);
     Pane pane = new Pane();
-    Scene theScene = new GameScene(pane, 1000, 1000,A);//taille de la fenêtre+affichage
+    Scene theScene = new GameScene(pane, 800, 800,A);//taille de la fenêtre+affichage
     primaryStage.setScene(theScene);
 
 
