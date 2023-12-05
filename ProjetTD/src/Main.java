@@ -15,7 +15,7 @@ public class Main extends Application {
          @Override
  public void start(Stage primaryStage) throws Exception{
     primaryStage.setTitle("Hello world");
-    Camera A=new Camera(0,0);
+    Camera A=new Camera(1000,0);
 
 
 

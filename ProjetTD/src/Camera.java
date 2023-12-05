@@ -20,4 +20,7 @@ public class Camera {
     public String toString(){
         return x+","+y;
     }
+
+    public void update(long time) {
+    }
 }
