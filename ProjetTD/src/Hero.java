@@ -8,7 +8,7 @@ public class Hero extends AnimatedThing {
     }
 
     public void update(long time) {
-        Cnt += 1; //fonctionne le Counter en microprocesseur
+        Cnt += 1; //fonctionne comme le Counter en microprocesseur
         if (Cnt==arr) {
             Cnt=0; //res
             int newIndex=this.index+1;
@@ -21,6 +21,7 @@ public class Hero extends AnimatedThing {
 
         //System.out.println(newIndex);
     }
+
 
 }
 

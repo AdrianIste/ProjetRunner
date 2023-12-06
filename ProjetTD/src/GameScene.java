@@ -53,12 +53,13 @@ public class GameScene extends Scene {
             }
 
         }
+        System.out.println(StaticThingLeft.getImageView().getLayoutX());
         AnimationTimer timer = new AnimationTimer() {
 
         public void handle ( long time){
             hero.update(time);
             //System.out.println(hero.index);
-            camera.update(time);
+            camera.update(time,hero.getX());
             GameScene.update(time);
 
         }
@@ -69,6 +70,8 @@ public class GameScene extends Scene {
     }
 
     private static void update(long time) {
+      //render(StaticThingLeft,StaticThingRight);// pour modifier le background selon la position de la camera dans grace a render
+
     }
 
 

@@ -50,6 +50,10 @@ public abstract class AnimatedThing {
     public void setIndex(int index) {
         this.index = index;
     }
+
+    public double getX() {
+        return x;
+    }
 }
 
 

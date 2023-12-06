@@ -14,6 +14,7 @@ public class StaticThing {
         this.imageView = new ImageView(image); //création de l'image view
         this.imageView.setFitHeight(sizeY);
         this.imageView.setFitWidth(sizeX);
+
     }
 
     public double getSizeY() {
